@@ -6,8 +6,5 @@ const src = path.join(root, 'src')
 module.exports = {
   root,
   src,
-  buildPath: path.join(root, '/build'),
-  copyDependencies: {
-    dist: path.join(src, 'local_modules')
-  }
+  buildPath: path.join(root, '/build')
 }

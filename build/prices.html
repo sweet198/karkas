@@ -8,11 +8,253 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-  @@include('./header/_header.html')
+  <header class="page-header">
+    <a class="page-header__logo logo" href="index.html">
+      <img alt="Iamdom - строительство загородных домов под ключ" src="img/logo-i3.jpg">
+    </a>
+    <ul>
+      <li>
+        <a href="tel:+79117031903">+7 (911) 703-19-03</a>
+      </li>
+      <li>
+        <a href="mailto:sweet198@mail.ru">sweet198@mail.ru</a>
+      </li>
+      <li>
+        <a class="button button--call" href="#">
+          Заказать звонок
+        </a>
+      </li>
+    </ul>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="projects.html">Проекты</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="reviews.html">Построенные дома</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="prices.html">Цены</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="reviews.html">Отзывы</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="reviews.html">О компании</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+      </li>
+    </ul>
+  </header>
   <main class="main">
     <h1>Каркасные дома</h1>
-    @@include('./prices/_prices.html')
-    @@include('./feedback/_feedback.html')
+    <section>
+      <h2>Наши цены</h2>
+      <p>
+        В любой строительной компании по своей сути формула проста:
+        Этажность дома + Комплектация (применяемые материалы) + Сложность проекта
+        Точная стоимость строительных и отделочных работ может быть оглашена только после изучения  проекта, с полными спецификациями материалов.
+        В  этом  разделе приведены комплектации и  цены на строительство каркасных домов с учётом стоимости материалов.
+        Обращаем Ваше внимание , что данные комплектации и цены указаны для предварительного расчёта.
+        Для получения точной стоимости строительства дома, необходимо рассчитывать каждый проект индивидуально.
+      </p>
+      <table>
+        <tr>
+          <th>Комплектация</th>
+          <th>Описание</th>
+          <th>Стоимость</th>
+        </tr>
+        <tr>
+          <td>
+            Комплектация:<br><b>"Внешний контур"</b><br>(1,5-2 этажа)
+          </td>
+          <td>
+            <ul>
+              <li>
+                Обвязка брус 150х200мм.
+              </li>
+              <li>
+                Половые и потолочные балки доска 50х150мм.
+              </li>
+              <li>
+                Силовая конструкция каркаса доска 50х150мм.
+              </li>
+              <li>
+                Перегородки доска  50х100мм.
+              </li>
+              <li>
+                Черновой пол: доска 25х150мм.
+              </li>
+              <li>
+                Монтаж ветро и гидроизоляции.
+              </li>
+              <li>
+                Контр обрешётка для создания вент. зазора строганная рейка 25х50мм.
+              </li>
+              <li>
+                Внешняя отделка: имитация бруса 20х175мм
+              </li>
+              <li>
+                Кровельная мембрана Изоспан АМ
+              </li>
+              <li>
+                Контр обрешётка для создания вент зазора брусок 50х50мм.
+              </li>
+              <li>
+                Кровля: металлочерепица Grand Line.
+              </li>
+              <li>
+                Окна: металлопластиковые двухкамкрные Veka.
+              </li>
+              <li>
+                Наличники из  сухой  строганной доски 20х120мм.
+              </li>
+              <li>
+                Подшивка свесов и оформление кровли доска сухая строганная.
+              </li>
+              <li>
+                Дверь вх. металлическая.
+              </li>
+              <li>
+                Сборка на участке.
+              </li>
+            </ul>
+          </td>
+          <td>
+            <b>от 8000 руб/м<sup>2</sup></b><br>(по полу этажей)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Комплектация:<br><b>"Под ключ"</b><br>(1,5-2 этажа)
+          </td>
+          <td>
+            <ul>
+              <li>
+                Обвязка брус 150х150мм.
+              </li>
+              <li>
+                Половые и потолочные балки доска 50х200мм.
+              </li>
+              <li>
+                Силовая конструкция каркаса доска 50х150мм.
+              </li>
+              <li>
+                Перегородки доска  50х100мм.
+              </li>
+              <li>
+                Черновой пол: доска 25х150мм.
+              </li>
+              <li>
+                Монтаж ветро и гидроизоляции.
+              </li>
+              <li>
+                Контр обрешётка для создания вент. зазора строганная рейка 25х50мм.
+              </li>
+              <li>
+                Внешняя отделка: имитация бруса 20х175мм
+              </li>
+              <li>
+                Кровельная мембрана Изоспан АМ
+              </li>
+              <li>
+                Контр обрешётка для создания вент зазора брусок 50х50мм.
+              </li>
+              <li>
+                Кровля: металлочерепица Grand Line.
+              </li>
+              <li>
+                Окна: металлопластиковые двухкамкрные Veka.
+              </li>
+              <li>
+                Наличники из  сухой  строганной доски 20х120мм.
+              </li>
+              <li>
+                Подшивка свесов и оформление кровли доска сухая строганная.
+              </li>
+              <li>
+                Дверь вх. металлическая.
+              </li>
+              <li>
+                Утеплитель: базальтовая вата 150мм. Paroc.
+              </li>
+              <li>
+                Пароизоляционная мембрана.
+              </li>
+              <li>
+                Контр обрешётка сухая строганная рейка 20х45мм.
+              </li>
+              <li>
+                Внутренняя отделка: сухая вагонка хвойных пород или ГКЛ.
+              </li>
+              <li>
+                Лестница.
+              </li>
+              <li>
+                Пол:  шпунтованная доска 36 мм.
+              </li>
+              <li>
+                Двери меж.комнт. деревянные филенчатые.
+              </li>
+              <li>
+                Плинтус пол, потолок строганный фигурный.
+              </li>
+              <li>
+                Сборка на участке.
+              </li>
+            </ul>
+          </td>
+          <td>
+            <b>от 14000 руб/м<sup>2</sup></b><br>(по полу этажей)
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Нужна консультация?</h2>
+      <p>Подробно расскажем о наших услугах, видах работ и типовых проектах, рассчитаем стоимость и подготовим индивидуальное предложение!</p>
+      <a class="button button--call" href="#">
+        Задать вопрос
+      </a>
+    </section>
+    <section class="modal modal-feedback">
+      <h2>Задать вопрос</h2>
+      <p>
+        Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.
+      </p>
+      <form class="feedback-form" action="post.php" method="post">
+        <ul class="feedback-list">
+          <li class="feedback-item">
+            <label for="feedback-name">Ваше имя:</label>
+            <input class="feedback-name" id="feedback-name" type="text" name="name" value="" placeholder="Как к Вам обращаться:">
+          </li>
+          <li class="feedback-item">
+            <label for="feedback-phone">Телефон:</label>
+            <input class="feedback-phone" id="feedback-phone" type="tel" name="phone" value="" placeholder="Введите Ваш телефон:">
+          </li>
+          <li class="feedback-item">
+            <label for="feedback-mail">Почта:</label>
+            <input class="feedback-mail" id="feedback-mail" type="email" name="mail" value="" placeholder="Введите Вашу почту:">
+          </li>
+        </ul>
+        <button class="button" type="submit">Получить консультацию</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </main>
   <script src="js/script.min.js"></script>
 </body>

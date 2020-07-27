@@ -5,7 +5,6 @@ const svgSprite = require('./svgSprite')
 const styles = require('./styles')
 const html = require('./html')
 const script = require('./script')
-const copyDependencies = require('./copyDependencies')
 
 const server = require('browser-sync').create()
 
@@ -28,7 +27,7 @@ module.exports = function serve(cb) {
     gulp.watch('src/js/**/*.js', gulp.series(script, readyReload))
     gulp.watch('src/pages/**/*.html', gulp.series(html, readyReload))
 
-    gulp.watch('package.json', gulp.series(copyDependencies, readyReload))
+    gulp.watch('package.json', gulp.series(readyReload))
 
     return cb()
 }
