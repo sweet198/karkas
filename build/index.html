@@ -11,21 +11,23 @@
     <a class="page-header__logo logo" href="index.html">
       <img class="logo__img" alt="Iamdom - строительство загородных домов под ключ" src="img/logo-i3.jpg">
     </a>
-    <ul class="page-header__contacts-list">
-      <li class="page-header__contacts-item">
-        <a class="page-header__contacts-link contacts-link--tel" href="tel:+79117031903">+7 (911) 703-19-03</a>
+    <ul class="page-header__contacts-list contacts-list">
+      <li class="contacts-list__item">
+        <a class="contacts-list__link contacts-list__link--tel" href="tel:+79117031903">
+          +7 (911) 703-19-03
+        </a>
+        <a class="contacts-list__link contacts-list__link--mail" href="mailto:sweet198@mail.ru">
+          sweet198@mail.ru
+        </a>
       </li>
-      <li class="page-header__contacts-item">
-        <a class="page-header__contacts-link contacts-link--mail" href="mailto:sweet198@mail.ru">sweet198@mail.ru</a>
-      </li>
-      <li class="page-header__contacts-item">
-        <a class="page-header__contacts-link button button--call" href="#">
+      <li class="contacts-list__item">
+        <a class="contacts-list__link button button--call" href="#">
           Заказать звонок
         </a>
       </li>
     </ul>
     <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle button--menu-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle button button--menu-open" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link" href="projects.html">Проекты</a>
@@ -52,20 +54,42 @@
     </nav>
     <ul class="page-header__social social__list">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Вконтакте">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+            <path d="M393 566c-135 0-208-143-276-285-10-21 6-23 16-23l81-1c12 0 17 9 20 15 13 31 66 142 92 129 18-9 15-107 4-122-7-9-20-12-26-13-5-1 3-11 13-16 18-9 87-9 111-3 28 7 19 32 19 95 0 20-4 50 11 58 24 12 81-101 91-131 3-8 9-11 19-11h85c20 0 27 1 30 8 5 12-9 40-44 87-57 77-65 70-17 114 46 42 55 63 57 66 14 28-11 34-21 34h-76c-9 0-21 0-38-11-29-19-55-70-76-64-17 5-20 34-21 53-1 16-10 21-20 21h-34z"/>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+        <a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме">
+          <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"/>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+        <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+          <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Мы в youtube">
+          <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M400 224c144 0 201 2 224 25 17 17 26 52.125 26 151s-9 134-26 151c-23 23-80 25-224 25s-201-2-224-25c-17-17-26-52.125-26-151s9-134 26-151c23-23 80-25 224-25zm-52 100v141l135-70z"/>
+          </svg>
+        </a>
       </li>
     </ul>
   </header>
   <main class="main-page">
-    <h1 class="main-page__tytle">Каркасные дома</h1>
+    <h1 class="main-page__tytle visually-hidden">Каркасные дома</h1>
+    <section class="main-page__section slider-section">
+      <h2 class="visually-hidden">Слайдер-Карусель</h2>
+    </section>
     <section class="main-page__section project-section">
-      <h2 class="project-section__title">Проекты</h2>
+      <h2 class="project-section__title">Каталог проектов</h2>
       <ul class="project-section__list">
         <li class="project-section__item">
           <figure class="project-section__card goods-card">
@@ -74,7 +98,7 @@
               <img class="goods-card__img" src="img/52acda5506ecc7e9a7cdd19cfc452146.jpg" alt="">
               <span class="goods-card__footage">100 м<sup>2</sup></span>
               <span class="goods-card__size">9x9 м</span>
-              <span class="goods-card__price">500 000 руб.</span>
+              <span class="goods-card__price">500000 руб.</span>
             </a>
           </figure>
         </li>
@@ -85,7 +109,7 @@
               <img class="goods-card__img" src="img/63c7a9465c38f23206f53d17711c5715.jpg" alt="">
               <span class="goods-card__footage">150 м<sup>2</sup></span>
               <span class="goods-card__size">9x9 м</span>
-              <span class="goods-card__price">700 000 руб.</span>
+              <span class="goods-card__price">700000 руб.</span>
             </a>
           </figure>
         </li>
@@ -96,7 +120,7 @@
               <img class="goods-card__img" src="img/7e0bf3ea077b175a92fe4ebe3c4d79ae.jpg" alt="">
               <span class="goods-card__footage">175 м<sup>2</sup></span>
               <span class="goods-card__size">9x9 м</span>
-              <span class="goods-card__price">900 000 руб.</span>
+              <span class="goods-card__price">900000 руб.</span>
             </a>
           </figure>
         </li>
@@ -107,7 +131,7 @@
               <img class="goods-card__img" src="img/8d5b6bbf8fc6cdc3aac9a84c23d55b20.jpg" alt="">
               <span class="goods-card__footage">200 м<sup>2</sup></span>
               <span class="goods-card__size">9x9 м</span>
-              <span class="goods-card__price">1 200 000 руб.</span>
+              <span class="goods-card__price">1200000 руб.</span>
             </a>
           </figure>
         </li>
@@ -118,7 +142,7 @@
               <img class="goods-card__img" src="img/cd81683667eb9548237d033f1d0b5ba8.jpg" alt="">
               <span class="goods-card__footage">225 м<sup>2</sup></span>
               <span class="goods-card__size">9x9 м</span>
-              <span class="goods-card__price">1 500 000 руб.</span>
+              <span class="goods-card__price">1500000 руб.</span>
             </a>
           </figure>
         </li>
@@ -129,7 +153,7 @@
               <img class="goods-card__img" src="img/f15b159e1fac0b8867d5ee5503c4ee90.jpg" alt="">
               <span class="goods-card__footage">250 м<sup>2</sup></span>
               <span class="goods-card__size">9x9 м</span>
-              <span class="goods-card__price">1 750 000 руб.</span>
+              <span class="goods-card__price">1750000 руб.</span>
             </a>
           </figure>
         </li>
@@ -139,33 +163,32 @@
       <h2 class="advantages-section__title">Почему выбирают нас:</h2>
       <ul class="advantages-section__list">
         <li class="advantages-section__item">
-        <h3 class="advantages-section__tytle">В срок!</h3>
-          <p class="advantages-section__description">
-            Все работы проводятся в оговоренные сроки.
-            Вы всегда знаете, сколько продолжатся заказанные Вами работы.
+        <h3 class="advantages-section__item-title advantages-section__item-title--speed">Скорость</h3>
+          <p class="advantages-section__item-description">
+            Более 450 раз мы дарили своим клиентам радость от исполнения мечты.
           </p>
         </li>
         <li class="advantages-section__item">
-          <h3 class="advantages-section__tytle">Выбор!</h3>
-          <p class="advantages-section__description">
+          <h3 class="advantages-section__item-title advantages-section__item-title--choice">Выбор!</h3>
+          <p class="advantages-section__item-description">
             Строительство по типовым и индивидуальным проектам. Различные варианты комплектаций.
           </p>
         </li>
         <li class="advantages-section__item">
-          <h3 class="advantages-section__tytle">Гарантия!</h3>
-          <p class="advantages-section__description">
-            Предоставляем на все виды работ
+          <h3 class="advantages-section__item-title advantages-section__item-title--guarantee">Время года</h3>
+          <p class="advantages-section__item-description">
+            Мы даем гарантию - десять лет на построенные нами жилые объекты.
           </p>
         </li>
         <li class="advantages-section__item">
-          <h3 class="advantages-section__tytle">География!</h3>
-          <p class="advantages-section__description">
+          <h3 class="advantages-section__item-title advantages-section__item-title--season">География!</h3>
+          <p class="advantages-section__item-description">
             Ведём строительство по Ленинградской обл.
           </p>
         </li>
         <li class="advantages-section__item">
-          <h3 class="advantages-section__tytle">Опыт!</h3>
-          <p class="advantages-section__description">
+          <h3 class="advantages-section__item-title advantages-section__item-title--experience">Опыт!</h3>
+          <p class="advantages-section__item-description">
             Только профессиональные строители
           </p>
         </li>
@@ -186,7 +209,7 @@
           </figure>
         </li>
         <li class="built-section__item">
-          <figure class="built-section__card goods-card">
+          <figure class="built-section__card built-card">
             <figcaption class="built-card__title">Каркасный дом</figcaption>
             <a class="built-card__link" href="#">
               <img class="built-card__img" src="img/63c7a9465c38f23206f53d17711c5715.jpg" alt="">
@@ -197,7 +220,7 @@
           </figure>
         </li>
         <li class="built-section__item">
-          <figure class="built-section__card goods-card">
+          <figure class="built-section__card built-card">
             <figcaption class="built-card__title">Каркасный дом</figcaption>
             <a class="built-card__link" href="#">
               <img class="built-card__img" src="img/7e0bf3ea077b175a92fe4ebe3c4d79ae.jpg" alt="">
@@ -208,7 +231,7 @@
           </figure>
         </li>
         <li class="built-section__item">
-          <figure class="built-section__card goods-card">
+          <figure class="built-section__card built-card">
             <figcaption class="built-card__title">Каркасный дом</figcaption>
             <a class="built-card__link" href="#">
               <img class="built-card__img" src="img/8d5b6bbf8fc6cdc3aac9a84c23d55b20.jpg" alt="">
@@ -219,7 +242,7 @@
           </figure>
         </li>
         <li class="built-section__item">
-          <figure class="built-section__card goods-card">
+          <figure class="built-section__card built-card">
             <figcaption class="built-card__title">Каркасный дом</figcaption>
             <a class="built-card__link" href="#">
               <img class="built-card__img" src="img/cd81683667eb9548237d033f1d0b5ba8.jpg" alt="">
@@ -230,7 +253,7 @@
           </figure>
         </li>
         <li class="built-section__item">
-          <figure class="built-section__card goods-card">
+          <figure class="built-section__card built-card">
             <figcaption class="built-card__title">Каркасный дом</figcaption>
             <a class="built-card__link" href="#">
               <img class="built-card__img" src="img/f15b159e1fac0b8867d5ee5503c4ee90.jpg" alt="">
@@ -243,8 +266,8 @@
       </ul>
     </section>
     <section class="main-page__section video-section">
-      <h2 class="video-section__video">Вы можете наблюдать за строительством Вашего дома 24/7</h2>
-      <iframe class="video-section__title" width="560" height="315" src="https://www.youtube.com/embed/XQ6ysW6F77E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h2 class="video-section__title">Вы можете наблюдать за строительством Вашего дома 24/7</h2>
+      <iframe class="video-section__video" src="https://www.youtube.com/embed/XQ6ysW6F77E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <a class="video-section__link button button--youtube" href="https://www.youtube.com/channel/UC_11q6GV-rQLWGg3HYWw2dw">
         Посмотреть все видео
       </a>
@@ -258,52 +281,73 @@
         Задать вопрос
       </a>
     </section>
-
   </main>
   <footer class="page-footer">
-    <ul class="page-footer__site-list site-list">
-      <li class="site-list__item">
-        <a class="site-list__link" href="projects.html">Проекты</a>
+    <ul class="page-footer__site-list site-list site-list--footer">
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="projects.html">Проекты</a>
       </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="reviews.html">Построенные дома</a>
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="reviews.html">Построенные дома</a>
       </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="prices.html">Цены</a>
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="prices.html">Цены</a>
       </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="contract.html">Образец договора</a>
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="contract.html">Образец договора</a>
       </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="reviews.html">Отзывы</a>
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="reviews.html">Отзывы</a>
       </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="reviews.html">О компании</a>
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="reviews.html">О компании</a>
       </li>
-      <li class="site-list__item">
-        <a class="site-list__link" href="contacts.html">Контакты</a>
+      <li class="site-list__item site-list__item--footer">
+        <a class="site-list__link site-list__link--footer" href="contacts.html">Контакты</a>
       </li>
     </ul>
     <ul class="page-footer__social social__list">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+        <a class="social__link social__link--vkontakte" href="#" aria-label="Мы в Вконтакте">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+            <path d="M393 566c-135 0-208-143-276-285-10-21 6-23 16-23l81-1c12 0 17 9 20 15 13 31 66 142 92 129 18-9 15-107 4-122-7-9-20-12-26-13-5-1 3-11 13-16 18-9 87-9 111-3 28 7 19 32 19 95 0 20-4 50 11 58 24 12 81-101 91-131 3-8 9-11 19-11h85c20 0 27 1 30 8 5 12-9 40-44 87-57 77-65 70-17 114 46 42 55 63 57 66 14 28-11 34-21 34h-76c-9 0-21 0-38-11-29-19-55-70-76-64-17 5-20 34-21 53-1 16-10 21-20 21h-34z"/>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+        <a class="social__link social__link--instagram" href="#" aria-label="Мы в Инстаграме">
+          <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M150 400c0-119 0-166 42-208s88-42 208-42 166 0 208 42 42 89 42 208 0 166-42 208-88 42-208 42-166 0-208-42-42-89-42-208zm455 0c0-114 0-148-29-176-29-29-62-29-176-29s-148 0-176 29c-29 29-29 62-29 176s0 148 29 176c29 29 62 29 176 29s148 0 176-29c29-29 29-62 29-176zM400 272a128 128 0 1 1 0 256 128 128 0 0 1 0-256zm0 211c46 0 83-37 83-83s-37-83-83-83-83 37-83 83 37 83 83 83zm163-216c0 16-13 30-30 30-16 0-30-14-30-30 0-17 14-30 30-30 17 0 30 13 30 30z"/>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+        <a class="social__link social__link--facebook" href="#" aria-label="Мы в Фейсбуке">
+          <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M445 643h-90V419h-75v-87h75v-64q0-55 32-86 30-29 80-29 28 0 67 3v78h-47q-42 0-42 38v60h86l-11 87h-75v224z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Мы в youtube">
+          <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+            <path d="M400 224c144 0 201 2 224 25 17 17 26 52.125 26 151s-9 134-26 151c-23 23-80 25-224 25s-201-2-224-25c-17-17-26-52.125-26-151s9-134 26-151c23-23 80-25 224-25zm-52 100v141l135-70z"/>
+          </svg>
+        </a>
       </li>
     </ul>
     <ul class="page-footer__contacts-list">
       <li class="page-footer__contacts-item">
-        <a class="page-footer__contacts-link contacts-link--tel" href="tel:+79117031903">+7 (911) 703-19-03</a>
+        <a class="page-footer__contacts-link contacts-link--tel" href="tel:+79117031903">
+          +7 (911) 703-19-03
+        </a>
+        <a class="page-footer__contacts-link contacts-link--mail" href="mailto:sweet198@mail.ru">sweet198@mail.ru
+        </a>
       </li>
       <li class="page-footer__contacts-item">
-        <a class="page-footer__contacts-link contacts-link--mail" href="mailto:sweet198@mail.ru">sweet198@mail.ru</a>
-      </li>
-      <li class="page-footer__contacts-item">
-        <a class="page-footer__contacts-link contacts-link--address" href="contacts.html">г. Санкт-Петербург, ул. Карпинского, д.38, к.3, кв. 76</a>
+        <a class="page-footer__contacts-link contacts-link--address" href="contacts.html">
+          Санкт-Петербург, ул. Карпинского, д.38, к.3, кв. 76
+        </a>
       </li>
       <li class="page-footer__contacts-item">
         <a class="page-footer__contacts-link button button--call" href="#">
@@ -311,8 +355,14 @@
         </a>
       </li>
     </ul>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__description">
+        2005-2019 © Официальный сайт компании «i Am Dom» по строительству каркасных домов под ключ.
+        Все права защищены и охраняются законом РФ об авторском праве. Использование фотографий и текстов с сайта допускается только с письменного разрешения.
+      </p>
+    </div>
   </footer>
-  <section class="modal-feedback modal-feedback--ask">
+  <section class="modal-feedback modal-feedback--ask visually-hidden">
       <h2 class="modal-feedback__title">Задать вопрос</h2>
       <p class="modal-feedback__description">
         Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.
@@ -344,7 +394,7 @@
       </form>
       <button class="button button--close feedback-form__button" type="button">Закрыть</button>
     </section>
-    <section class="modal-feedback modal-feedback--call">
+    <section class="modal-feedback modal-feedback--call visually-hidden">
       <h2 class="modal-feedback__title">Обратный звонок</h2>
       <p class="modal-feedback__description">
         Представьтесь, мы вам перезвоним.
@@ -364,11 +414,11 @@
       </form>
       <button class="button button--close feedback-form__button" type="button">Закрыть</button>
     </section>
-  <section class="modal modal--map">
+  <section class="modal modal--map visually-hidden">
         <h2 class="modal--map__title">Как до нас добраться</h2>
         <iframe class="modal--map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A573d84ff7b066f2623753f6df997b1c54b61f6c930414ef008eb354d8daa6994&amp;source=constructor" width="100%" height="390" frameborder="0"></iframe>
         <button class="button button--close modal--map__button" type="button">Закрыть</button>
     </section>
-  <script src="js/script.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

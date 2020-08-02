@@ -21,7 +21,8 @@ module.exports = function styles() {
     }))
     .pipe(sass())
     .pipe(autoprefixer({
-      cascade: false
+      overrideBrowserslist: ["last 5 versions"],
+      cascade: true
     }))
     .pipe(shorthand())
     .pipe(gulp.dest('build/css'))

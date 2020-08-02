@@ -7,7 +7,7 @@ const rename = require("gulp-rename");
 const concat = require("gulp-concat");
 
 module.exports = function script() {
-  return gulp.src(['src/js/**/*.js', 'node_modules/jquery/dist/jquery.min.js'])
+  return gulp.src(['node_modules/jquery/dist/jquery.min.js', 'src/js/**/*.js'])
     .pipe (concat('main.js'))
     .pipe(plumber())
     .pipe(eslint())
