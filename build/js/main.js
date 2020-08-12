@@ -3023,6 +3023,7 @@ open.onclick = function() {
 
 $(document).ready(function(){
   $('.slider-section__slider').slick({
+    arrows: false,
     dots: true,
     slidesToScroll: 1,
     autoplay: true,
