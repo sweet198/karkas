@@ -9,6 +9,17 @@ open.onclick = function() {
   menu.classList.toggle('main-nav__list--open');
 };
 
+$(document).ready(function(){
+  $('.reviews-section__block').slick({
+    arrows: true,
+    dots: true,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 6000
+  })
+});
+
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___

@@ -389,80 +389,92 @@
         Если не хочется далеко ехать - почитайте отзывы.
         Мы честно поработали и получили заслуженные благодарности хороших людей - поэтому нам приятно похвастаться. Совсем чуть-чуть.
       </p>
-      <a class="reviews-section__link--all-reviews button button--all-reviews" href="#">
+      <a class="reviews-section__link reviews-section__link--all-reviews button button--all-reviews" href="#">
         Смотреть все отзывы (3)
       </a>
-      <ol class="reviews-section__list">
-        <li class="reviews-section__item">
-          <div class="review">
-            <h3 class="review__title">Отзыв №1</h3>
+      <div class="reviews-section__block">
+        <div class="reviews-section__container">
+          <div class="reviews-section__item review">
+            <h3 class="review__title visually-hidden">Отзыв №1</h3>
             <img class="review__avatar" src="img/112x112-noavatar.jpg" alt="avatar">
             <p class="review__autor">
-              <span>Свитковский Влад</span> г. Санкт-Петербург
+              Свитковский Влад
             </p>
-            <p  class="review__date">
+            <p class="review__date">
               <time datetime="2020-08-05">
                 5 августа 2020г.
               </time>
+            </p>
+            <p class="review__address">
+              <b>Адрес: </b>г. Санкт-Петербург
             </p>
             <p  class="review__content">
               Все понравилось.
             </p>
           </div>
-        </li>
-        <li class="reviews-section__item">
-          <div class="review">
-            <h3 class="review__title">Отзыв №1</h3>
+        </div>
+        <div class="reviews-section__container">
+          <div class="reviews-section__item review">
+            <h3 class="review__title visually-hidden">Отзыв №1</h3>
             <img class="review__avatar" src="img/112x112-noavatar.jpg" alt="avatar">
             <p class="review__autor">
-              <span>Свитковский Влад</span> г. Санкт-Петербург
+              Свитковский Влад
             </p>
-            <p  class="review__date">
+            <p class="review__date">
               <time datetime="2020-08-05">
                 5 августа 2020г.
               </time>
+            </p>
+            <p class="review__address">
+              <b>Адрес: </b>г. Санкт-Петербург
             </p>
             <p  class="review__content">
               Все понравилось.
             </p>
           </div>
-        </li>
-        <li class="reviews-section__item">
-          <div class="review">
-            <h3 class="review__title">Отзыв №1</h3>
+        </div>
+        <div class="reviews-section__container">
+          <div class="reviews-section__item review">
+            <h3 class="review__title visually-hidden">Отзыв №1</h3>
             <img class="review__avatar" src="img/112x112-noavatar.jpg" alt="avatar">
             <p class="review__autor">
-              <span>Свитковский Влад</span> г. Санкт-Петербург
+              Свитковский Влад
             </p>
-            <p  class="review__date">
+            <p class="review__date">
               <time datetime="2020-08-05">
                 5 августа 2020г.
               </time>
+            </p>
+            <p class="review__address">
+              <b>Адрес: </b>г. Санкт-Петербург
             </p>
             <p  class="review__content">
               Все понравилось.
             </p>
           </div>
-        </li>
-        <li class="reviews-section__item">
-          <div class="review">
-            <h3 class="review__title">Отзыв №1</h3>
+        </div>
+        <div class="reviews-section__container">
+          <div class="reviews-section__item review">
+            <h3 class="review__title visually-hidden">Отзыв №1</h3>
             <img class="review__avatar" src="img/112x112-noavatar.jpg" alt="avatar">
             <p class="review__autor">
-              <span>Свитковский Влад</span> г. Санкт-Петербург
+              Свитковский Влад
             </p>
-            <p  class="review__date">
+            <p class="review__date">
               <time datetime="2020-08-05">
                 5 августа 2020г.
               </time>
+            </p>
+            <p class="review__address">
+              <b>Адрес: </b>г. Санкт-Петербург
             </p>
             <p  class="review__content">
               Все понравилось.
             </p>
           </div>
-        </li>
-      </ol>
-       <a class="reviews-section__link--add-review button button--add-review" href="#">
+        </div>
+      </div>
+       <a class="reviews-section__link reviews-section__link--add-review button button--add-review" href="#">
         Оставить отзыв
       </a>
     </section>
@@ -547,44 +559,44 @@
       </p>
     </div>
   </footer>
-  <section class="modal-feedback modal-feedback--ask visually-hidden">
-      <h2 class="modal-feedback__title">Задать вопрос</h2>
-      <p class="modal-feedback__description">
+  <section class="modal modal--feedback-ask visually-hidden">
+      <h2 class="modal__title">Задать вопрос</h2>
+      <p class="modal__description">
         Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.
       </p>
-      <form class="modal-feedback__form feedback-form feedback-form--ask" action="post.php" method="post">
+      <form class="modal__form feedback-form feedback-form--ask " action="post.php" method="post">
         <ul class="feedback-form__list">
           <li class="feedback-form__item feedback-name">
-            <label class="feedback-name__label" for="feedback-name1">Ваше имя:</label>
-            <input class="feedback-name__input" id="feedback-name1" type="text" name="name" value="" placeholder="Как к Вам обращаться:">
+            <label class="feedback-name__label visually-hidden" for="feedback-name1">Ваше имя:</label>
+            <input class="feedback-name__input" id="feedback-name1" type="text" name="name" value="" placeholder="Ваше имя">
           </li>
           <li class="feedback-form__item feedback-phone">
-            <label class="feedback-phone__label" for="feedback-phone1">Телефон:</label>
-            <input class="feedback-phone__input" id="feedback-phone1" type="tel" name="phone" value="" placeholder="Введите Ваш телефон:">
+            <label class="feedback-phone__label visually-hidden" for="feedback-phone1">Телефон:</label>
+            <input class="feedback-phone__input" id="feedback-phone1" type="tel" name="phone" value="" placeholder="Телефон" required>
           </li>
           <li class="feedback-form__item feedback-mail">
-            <label class="feedback-mail__label" for="feedback-mail1">Почта:</label>
-            <input class="feedback-mail__input" id="feedback-mail1" type="email" name="mail" value="" placeholder="Введите Вашу почту:">
+            <label class="feedback-mail__label visually-hidden" for="feedback-mail1">Почта:</label>
+            <input class="feedback-mail__input" id="feedback-mail1" type="email" name="mail" value="" placeholder="Почта">
           </li>
            <li class="feedback-form__item feedback-goods">
-            <label class="feedback-goods__label" for="feedback-goods1">Почта:</label>
+            <label class="feedback-goods__label visually-hidden" for="feedback-goods1">Интересующий товар/услуга</label>
             <input class="feedback-goods__input" id="feedback-goods1" type="text" name="goods" value="" placeholder="Интересующий товар/услуга:">
           </li>
           <li  class="feedback-form__item feedback-comment">
-            <label class="feedback-comment__label" for="feedback-comment1">Сообщение:</label>
-            <textarea name="comment" id="feedback-comment1" cols="30" rows="10"></textarea>
+            <label class="feedback-comment__label" for="feedback-comment1">Напишите вопрос:</label>
+            <textarea name="comment" id="feedback-comment1" rows="10" required="required"></textarea>
           </li>
         </ul>
-        <button class="button button--submit feedback-form__button" type="submit">Отправить</button>
+        <button class="button button--submit feedback-form__button feedback-form__button--submit" type="submit">Отправить</button>
       </form>
       <button class="button button--close feedback-form__button" type="button">Закрыть</button>
     </section>
-    <section class="modal-feedback modal-feedback--call visually-hidden">
-      <h2 class="modal-feedback__title">Обратный звонок</h2>
-      <p class="modal-feedback__description">
+    <section class="modal modal--feedback-call visually-hidden">
+      <h2 class="modal__title">Обратный звонок</h2>
+      <p class="modal__description">
         Представьтесь, мы вам перезвоним.
       </p>
-      <form class="modal-feedback__form feedback-form feedback-form--call" action="post.php" method="post">
+      <form class="modal__form feedback-form feedback-form--call" action="post.php" method="post">
         <ul class="feedback-form__list">
           <li class="feedback-form__item feedback-name">
             <label class="feedback-name__label" for="feedback-name2">Ваше имя:</label>
@@ -595,15 +607,16 @@
             <input class="feedback-phone__input" id="feedback-phone2" type="tel" name="phone" value="" placeholder="Введите Ваш телефон:">
           </li>
         </ul>
-        <button class="button button--submit feedback-form__button" type="submit">Отправить</button>
+        <button class="button button--submit feedback-form__button--submit" type="submit">Отправить</button>
       </form>
       <button class="button button--close feedback-form__button" type="button">Закрыть</button>
     </section>
-  <section class="modal modal--map visually-hidden">
-        <h2 class="modal--map__title">Как до нас добраться</h2>
-        <iframe class="modal--map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A573d84ff7b066f2623753f6df997b1c54b61f6c930414ef008eb354d8daa6994&amp;source=constructor" width="100%" height="390" frameborder="0"></iframe>
+  <section class="modal modal--map">
+        <h2 class="modal__title">Карта</h2>
+        <iframe class="modal__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A573d84ff7b066f2623753f6df997b1c54b61f6c930414ef008eb354d8daa6994&amp;source=constructor" width="100%" height="390" frameborder="0"></iframe>
         <button class="button button--close modal--map__button" type="button">Закрыть</button>
     </section>
+    <div class="modal-overlay"></div>
   <script src="js/main.min.js"></script>
 </body>
 </html>
