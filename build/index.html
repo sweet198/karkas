@@ -201,6 +201,9 @@
           </figure>
         </li>
       </ul>
+       <a class="project-section__link button button--project" href="">
+        Все проекты
+      </a>
     </section>
     <section class="main-page__section advantages-section">
       <h2 class="advantages-section__title">Почему выбирают нас:</h2>
@@ -307,6 +310,9 @@
           </figure>
         </li>
       </ul>
+      <a class="build-section__link button button--build" href="">
+        Построенные дома
+      </a>
     </section>
     <section class="main-page__section stages-section">
       <h2 class="stages-section__title">Этапы работ</h2>
@@ -564,7 +570,7 @@
       <p class="modal__description">
         Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.
       </p>
-      <form class="modal__form feedback-form feedback-form--ask " action="post.php" method="post">
+      <form class="modal__form feedback-form feedback-form--ask" action="post.php" method="post">
         <ul class="feedback-form__list">
           <li class="feedback-form__item feedback-name">
             <label class="feedback-name__label visually-hidden" for="feedback-name1">Ваше имя:</label>
@@ -584,7 +590,7 @@
           </li>
           <li  class="feedback-form__item feedback-comment">
             <label class="feedback-comment__label" for="feedback-comment1">Напишите вопрос:</label>
-            <textarea name="comment" id="feedback-comment1" rows="10" required="required"></textarea>
+            <textarea name="comment" id="feedback-comment1" rows="5" required="required"></textarea>
           </li>
         </ul>
         <button class="button button--submit feedback-form__button feedback-form__button--submit" type="submit">Отправить</button>
@@ -611,12 +617,38 @@
       </form>
       <button class="button button--close feedback-form__button" type="button">Закрыть</button>
     </section>
-  <section class="modal modal--map">
+  <section class="modal modal--map visually-hidden">
         <h2 class="modal__title">Карта</h2>
         <iframe class="modal__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A573d84ff7b066f2623753f6df997b1c54b61f6c930414ef008eb354d8daa6994&amp;source=constructor" width="100%" height="390" frameborder="0"></iframe>
         <button class="button button--close modal--map__button" type="button">Закрыть</button>
     </section>
-    <div class="modal-overlay"></div>
+    <section class="modal modal--feedback-review visually-hidden">
+      <h2 class="modal__title">Оставить отзыв</h2>
+      <p class="modal__description">После модерации отзыв будет размещен на сайте</p>
+      <form class="modal__form feedback-form feedback-form--review" action="post.php" method="post" enctype="multipart/form-data">
+        <ul class="feedback-form__list">
+          <li class="feedback-form__item feedback-name">
+            <label class="feedback-name__label visually-hidden" for="feedback-name3">Ваше имя:</label>
+            <input class="feedback-name__input" id="feedback-name3" type="text" name="name" value="" placeholder="Ваше имя">
+          </li>
+          <li class="feedback-form__item feedback-mail">
+            <label class="feedback-mail__label visually-hidden" for="feedback-mail3">Почта:</label>
+            <input class="feedback-mail__input" id="feedback-mail3" type="email" name="mail" value="" placeholder="Почта">
+          </li>
+          <li class="feedback-form__item feedback-file">
+            <label class="feedback-file__label visually-hidden" for="feedback-file">Прикрепите файл:</label>
+            <input class="feedback-file__input" id="feedback-file" type="file" name="file">
+          </li>
+          <li  class="feedback-form__item feedback-comment">
+            <label class="feedback-comment__label" for="feedback-comment3">Напишите отзыв:</label>
+            <textarea name="comment" id="feedback-comment3" rows="5" required="required"></textarea>
+          </li>
+        </ul>
+        <button class="button button--submit feedback-form__button feedback-form__button--submit" type="submit">Отправить</button>
+      </form>
+      <button class="button button--close feedback-form__button" type="button">Закрыть</button>
+    </section>
+    <div class="modal-overlay visually-hidden"></div>
   <script src="js/main.min.js"></script>
 </body>
 </html>

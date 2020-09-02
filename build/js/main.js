@@ -7,6 +7,11 @@ var open = document.querySelector('.main-nav__toggle');
 
 open.onclick = function() {
   menu.classList.toggle('main-nav__list--open');
+  if (open.textContent === "Открыть меню") {
+    open.innerHTML = "Закрыть меню";
+  } else {
+    open.innerHTML = "Открыть меню";
+  }
 };
 
 $(document).ready(function(){
